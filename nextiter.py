@@ -13,7 +13,7 @@ class EvenNumbers:
             self.start += 2
             return start
         else:
-            if self.start <= self.end and self.start % 2 != 0:
+            if self.start <= self.end - 1 and self.start % 2 != 0:
                 start = self.start + 1
                 self.start += 2
                 return start
