@@ -24,3 +24,26 @@ class EvenNumbers:
 en = EvenNumbers(10, 25)
 for i in en:
     print(i)
+
+#ВТОРОЙ ВАРИАНТ РЕШЕНИЯ
+
+class EvenNumbers:
+
+    def __init__(self, start=0, end=1):
+        self.start = start
+        self.end = end
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.start <= self.end:
+            for val in range(self.start, self.end + 1):
+                if val % 2 == 0:
+                    print(val)
+            raise StopIteration
+
+
+en = EvenNumbers(11, 27)
+for i in en:
+    print(i) 
