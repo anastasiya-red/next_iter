@@ -25,7 +25,8 @@ en = EvenNumbers(10, 25)
 for i in en:
     print(i)
 
-#ВТОРОЙ ВАРИАНТ РЕШЕНИЯ
+
+# ВТОРОЙ ВАРИАНТ РЕШЕНИЯ
 
 class EvenNumbers:
 
